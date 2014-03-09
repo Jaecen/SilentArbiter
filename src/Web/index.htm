@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" ng-app="silentArbiterApp">
+<head>
+	<meta charset="utf-8" />
+	<title>Silent Arbiter</title>
+
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="script/app.js"></script>
+
+	<style>
+		/* http://colorschemedesigner.com/#0E52Pw0w0w0w0 */
+		html {
+			height: 100%;
+		}
+
+		body {
+			height: 100%;
+			margin: 0;
+			background: -webkit-linear-gradient(top, #ff8b00 0%, #ffa840 100%);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+
+		.market-data {
+			width: 150px;
+			height: 150px;
+			border: 8px solid #60016d;
+			border-radius: 8px;
+			background: #930387;
+			color: white;
+			float: left;
+			text-align: center;
+			padding: 8px;
+			margin: 8px;
+		}
+	</style>
+</head>
+<body>
+	<div ng-controller="priceDeltaList">
+		<div class="market-data">
+			<h2>Cryptsy</h2>
+			<div>Buy: <span>{{ cryptsy.buyPrice }}</span></div>
+			<div>Sell: <span>{{ cryptsy.sellPrice }}</span></div>
+		</div>
+		<div class="market-data">
+			<h2>Poloniex</h2>
+			<div>Buy: <span>{{ poloniex.buyPrice }}</span></div>
+			<div>Sell: <span>{{ poloniex.sellPrice }}</span></div>
+		</div>
+		<br style="clear:left;" />
+	</div>
+</body>
+</html>

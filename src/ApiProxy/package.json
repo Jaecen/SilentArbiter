@@ -1,0 +1,10 @@
+{
+  "name": "ApiProxy",
+  "version": "0.0.0",
+  "description": "ApiProxy",
+  "main": "server.js",
+  "author": {
+    "name": "jason_000",
+    "email": ""
+  }
+}
